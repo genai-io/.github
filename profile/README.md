@@ -2,8 +2,8 @@
 
 **Open agent infrastructure, written in Go.**
 
-Two repositories carry the work: **San**, a terminal agent runtime you can open
-all the way down, and **sdk-go**, the LLM client and agent SDK it runs on.
+Two projects: **San**, a terminal agent runtime you can open all the way down,
+and **sdk-go**, the LLM and agent SDK beneath it.
 
 ---
 
@@ -30,7 +30,7 @@ brew tap genai-io/san && brew install san    # or: curl -fsSL https://raw.github
 A Go SDK for large language models, in two packages — and the engine San itself
 is built on.
 
-- **`pkg/ai` — one model call.** One typed API over five protocols: Anthropic Messages, Anthropic on Vertex AI, OpenAI Chat Completions, OpenAI Responses and Google Gemini. Streaming, tool calling, structured outputs, typed errors, a catalog of 27 vendors, and no ambient credentials.
+- **`pkg/ai` — one model call.** One typed API over six protocols from Anthropic, OpenAI and Google. Streaming, tool calling, structured outputs, typed errors, a catalog of 28 vendors, and no ambient credentials.
 - **`pkg/agent` — the loop around it.** Reason and act, everything as events, four hooks to refuse or rewrite a tool call, parallel tools, and sessions you can restore.
 
 ```bash
